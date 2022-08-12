@@ -33,9 +33,9 @@ def get_birthday():
 '''  
   if next < datetime.now():
     next = next.replace(year=next.year + 1)
-      return (next).days
+      return (next - today).days
 '''
-  return (next - today).days
+  return (next).days
 
 def get_words():
   words = requests.get("https://api.shadiao.pro/chp")
