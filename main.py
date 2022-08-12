@@ -33,6 +33,7 @@ def get_birthday():
 '''  
   if next < datetime.now():
     next = next.replace(year=next.year + 1)
+      return (next).days
 '''
   return (next - today).days
 
